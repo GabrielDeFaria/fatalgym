@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+:root {
+	--fonte-primaria: 'Poppins', sans-serif;
+	--cor-primaria: #78f800;
+	--cor-secundaria: #141414;
+	--cor-terciaria: #ffffff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+body {
+	background-color: var(--cor-secundaria);
+	font-family: var(--fonte-primaria);
+}
+
+.container {
+	padding: 1rem;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.titulo {
+	color: var(--cor-primaria);
+	font-size: 2rem;
+	font-weight: 900;
+	font-style: italic;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-bottom: 1.5rem;
+}
+
+.branco {
+	color: var(--cor-terciaria);
+}
+
+.destaque {
+	height: 100vh;
+	background-image: url(img/home.jpeg);
+	background-position: top center;
+	background-size: cover;
+}
+
+.logo {
+	color: var(--cor-terciaria);
+	font-weight: 800;
+}
+
+.conteudo {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.titulo-principal {
+	color: var(--cor-terciaria);
+	font-size: 2.5rem;
+	font-weight: 900;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+.titulo-principal span {
+	color: var(--cor-primaria);
+}
+
+.botao {
+	margin-top: 1rem;
+	background-color: var(--cor-primaria);
+	border: none;
+	outline: none;
+	padding: 0.8rem 2rem;
+	transition: .5s;
+}
+
+.botao:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.botao a {
+	color: var(--cor-secundaria);
+	text-decoration: none;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+.sobre .container {
+	padding: 3rem 1rem;
+}
+
+.sobre .container .linha {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.botao-link {
+	margin-top: 2rem;
+	font-size: 1rem;
+	text-transform: capitalize;
+	border: none;
+	outline: none;
+	background-color: #ffffff00;
+}
+
+.botao-link a {
+	color: var(--cor-terciaria);
+}
+
+.oferta .container {
+	padding: 3rem 1rem;
+}
+
+.cartao-oferta {
+	height: 60vh;
+	width: 100%;
+	margin: 2rem 0;
+	background-size: cover;
+	position: center center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.oferta-passeio {
+	background-image: url(img/boxe.webp);
+}
+
+.oferta-aulas {
+	background-image: url(img/musculacao.webp);
+}
+
+.oferta-treinamento {
+	background-image: url(img/crossfit.webp);
+}
+
+.nome-oferta {
+	color: var(--cor-terciaria);
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-style: italic;
+	text-align: center;
+}
+
+.depoimento .container {
+	padding: 2rem 1rem;
+}
+
+.cartao-depoimento {
+	margin: 1.5rem 0;
+}
+
+.foto-autor {
+	height: 45vh;
+	background-size: cover;
+	background-position: top center;
+}
+
+.foto-autor-a {
+	background-image: url(img/prof-boxe.webp);
+}
+
+.foto-autor-b {
+	background-image: url(img/prof-musculacao.webp);
+}
+
+.foto-autor-c {
+	background-image: url(img/prof-crossfit.webp);
+}
+
+.conteudo-depoimento {
+	background-color: var(--cor-primaria);
+	padding: 1rem;
+}
+
+.nome-autor {
+	font-size: 1.2rem;
+	font-style: italic;
+}
+
+.widget-rodape {
+	height: 60vh;
+	background-image: url(img/rodepe.webp);
+	background-size: cover;
+	background-position: center center;
+}
+
+.widget-rodape .container {
+	padding: 2rem 2rem;
+}
+
+.rodape-inferior {
+	background: var(--cor-primaria);
+}
+
+.rodape-inferior .container {
+	padding: 2rem 1.5rem;
+}
+
+.rodape-inferior .container .linha .coluna {
+	margin: 1.5rem 0;
+}
+
+.titulo-contato {
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 1300px;
+		margin: 0 auto;
+	}
+
+	.titulo {
+		font-size: 3.5rem;
+	}
+
+	.destaque .container {
+		padding: 2.5rem 5rem;
+	}
+
+	.logo {
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+
+	.titulo-principal {
+		font-size: 6.5rem;
+		font-weight: 800;
+	}
+
+	.botao a {
+		font-size: 1.5rem;
+	}
+
+	.sobre .container {
+		padding: 6rem 4rem;
+	}
+
+	.sobre .container .linha {
+		flex-direction: row;
+		gap: 5rem;
+	}
+
+	.sobre-conteudo {
+		width: 40%;
+	}
+
+	.sobre-imagem {
+		width: 55%;
+	}
+
+	.botao-link {
+		font-size: 1.3rem;
+	}
+
+	.oferta .container {
+		padding: 1rem 4rem;
+	}
+
+	.oferta .container .titulo,
+	.oferta .container .sub-titulo {
+		text-align: center;
+	}
+
+	.oferta .container .linha {
+		display: flex;
+		flex-direction: row;
+		gap: 4rem;
+		width: 100%;
+	}
+
+	.oferta .container .linha .coluna {
+		width: 100%;
+	}
+
+	.depoimento {
+		margin: 2rem 0
+	}
+
+	.depoimento .container {
+		padding: 6rem 4rem;
+	}
+
+	.depoimento .container .titulo {
+		text-align: center;
+	}
+
+	.depoimento .container .linha {
+		display: flex;
+		flex-direction: row;
+		gap: 4rem;
+		width: 100%;
+	}
+
+	.widget-rodape {
+		height: 70vh;
+	}
+
+	.widget-rodape .container {
+		padding: 6rem 4rem;
+	}
+
+	.rodape-inferior .container {
+		padding: 2rem 4rem;
+	}
+
+	.rodape-inferior .container .linha {
+		display: flex;
+		justify-content: space-between;
+	}
+}
